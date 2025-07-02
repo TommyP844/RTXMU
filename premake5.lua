@@ -13,7 +13,8 @@ project "RTXMU"
     }
 
     includedirs {
-        "include"
+        "include",
+        os.getenv("VULKAN_SDK") .. "/include",
     }
 
     filter "system:windows"
