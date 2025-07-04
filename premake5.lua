@@ -14,7 +14,7 @@ project "RTXMU"
 
     includedirs {
         "include",
-        os.getenv("VULKAN_SDK") .. "/include",
+        VulkanDir, -- Provided by NVRHI fork
     }
 
     filter "system:windows"
